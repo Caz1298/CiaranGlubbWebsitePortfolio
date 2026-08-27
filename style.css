@@ -2,14 +2,28 @@
     margin: 0;
 }
 
+body {
+    background-image: url();
+    background-repeat: repeat;
+    background-size: 10%;
+    background-color: #0C3C75;
+    min-width: 960px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header {
     background-color: #767771;
     height: 80px;
     min-width: 960px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
+    flex-shrink: 0;
+    z-index: 1;
 }
 
 .Connerinfo{
@@ -34,18 +48,6 @@ footer {
     flex-shrink: 0;
 }
 
-body {
-    background-image: url();
-    background-repeat: repeat;
-    background-size: 10%;
-    background-color: #0C3C75;
-    min-width: 960px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -59,7 +61,7 @@ main {
     height: 280px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 90px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,10 +71,32 @@ main {
     background-color: #C0C0C0;
     width: 900px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
     border-style: solid;
     border-width: 5px;
     border-color: black;
     box-sizing: border-box;
+}
+
+.Profile-container img {
+    width: 20%;
+    margin-left: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    box-sizing: border-box;
+
+}
+
+.Text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
 }
 
 .BottomOuter-container {
@@ -90,10 +114,19 @@ main {
     background-color: #C0C0C0;
     width: 900px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     border-style: solid;
     border-width: 5px;
     border-color: black;
     box-sizing: border-box;
+}
+
+.OtherGames-container img {
+    object-fit: fill;
+    width: 100%;
 }
 
 .OuterVideo-container {
@@ -115,44 +148,22 @@ main {
     border-color: gray;
 }
 
-.video-container1 {
+.video-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.video-container1 video {
+.video-container video {
     width: 100%;
 }
 
-.video-container2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-container2 video {
-    width: 100%;
-}
-
-.video-container3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-container3 video {
-    width: 100%;
-}
-
-.video-container4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-container4 video {
-    width: 100%;
+.video-container .hover-text {
+    position: absolute;
+    background: #767771;
+    color: white;
+    font-size: 60px;
 }
 
 #glass {
