@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #545454;
+    background-color: #334155;
     height: 80px;
     width: 100%;
     position: sticky;
@@ -33,7 +33,7 @@ header {
 
 .Connerinfo-container{
     width: 60%;
-    color: white;
+    color: #F8FAFC;
     padding-left: 20px;
     display: flex;
     flex-direction: row;
@@ -41,6 +41,7 @@ header {
     justify-self: start;
     gap: 10px;
     font-size: 14px;
+    font-family: 'Inter', sans-serif;
 }
 
 .Connerinfo-container img {
@@ -69,18 +70,18 @@ header {
     height: 40px;
     cursor: pointer;
     background-color: transparent;
-    color: white;
+    color: #F8FAFC;
     border-bottom-style: solid;
     border-bottom-width: 2.5px;
-    border-bottom-color: black;
+    border-bottom-color: #D4AF37;
 }
 
 .HeaderButton:hover {
-    background-color: #696969;
+    background-color: #334155;
 }
 
 footer {
-    background-color: #545454;
+    background-color: #334155;
     height: 80px;
     width: 100%;
     flex-shrink: 0;
@@ -91,8 +92,9 @@ footer {
 
 .FooterItemsLeft-container{
     padding-left: 50px;
-    color: white;
+    color: #F8FAFC;
     font-size: 20px;
+    font-family: 'Inter', sans-serif;
     margin-right: auto;
 }
 
@@ -102,10 +104,11 @@ footer {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    color: white;
+    color: #F8FAFC;
     padding-right: 60px;
     font-size: 20px;
     gap: 2.5px;
+    font-family: 'Inter', sans-serif;
 }
 
 .FooterLogos-container{
@@ -129,7 +132,7 @@ main {
 /*This stuff is for Home Page: Profile, Videos, Other games*/
 
 .Profile-container {
-    background-color: #727272;
+    background-color: #5b6777;
     width: 1100px;
     height: 450px;
     margin-top: 10px;
@@ -162,7 +165,7 @@ main {
 }
 
 .Text-container{
-    color: white;
+    color: #F8FAFC;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -188,7 +191,7 @@ main {
 
 .OtherGames-container {
     position: relative;
-    background-color: #545454;
+    background-color: #334155;
     width: 960px;
     height: 300px;
     margin-bottom: 10px;
@@ -214,8 +217,9 @@ main {
 
 .OtherGames-container .hover-text {
     position: absolute;
-    color: white;
+    color: #F8FAFC;
     font-size: 60px;
+    font-family: 'Inter', sans-serif;
     border-bottom-color: #D4AF37;
     border-bottom-style: solid;
     border-radius: 4px;
@@ -261,8 +265,9 @@ main {
 
 .video-container .hover-text {
     position: absolute;
-    color: white;
+    color: #F8FAFC;
     font-size: 60px;
+    font-family: 'Inter', sans-serif;
     border-bottom-color: #D4AF37;
     border-bottom-style: solid;
     border-radius: 4px;
@@ -287,7 +292,7 @@ main {
 /*This is for Other Games Page: ShowGame  OthergamesVideo Left/Right, OthergamesText Left/Right*/
 
 .ShowGame-container {
-    background-color: #727272;
+    background-color: #5b6777;
     width: 1100px;
     height: 400px;
     margin-top: 10px;
@@ -325,7 +330,7 @@ main {
     flex-direction: column;
     gap: 10px;
     padding-right: 10px;
-    color: white;
+    color: #F8FAFC;
     font-size: 22px;
 }
 
@@ -351,7 +356,7 @@ main {
     flex-direction: column;
     gap: 10px;
     padding-left: 10px;
-    color: white;
+    color: #F8FAFC;
     font-size: 22px;
 }
 
@@ -360,7 +365,7 @@ main {
 /*This is for each Games Page*/
 
 .VideoandTitle-container {
-    background-color: #727272;
+    background-color: #5b6777;
     width: 1100px;
     height: 700px;
     margin-top: 10px;
@@ -377,7 +382,7 @@ main {
 .GameTitle-Contanier {
     width: 100%;
     height: 15%;
-    color: white;
+    color: #F8FAFC;
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -395,6 +400,52 @@ main {
 
 .GameVideo-Contanier video {
     width: 90%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+.DescriptionAndSkills-container {
+    width: 1100px;
+    height: 350px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.GameDescription {
+    width: 70%;
+    height: 100%;
+    background-color: #5b6777;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #F8FAFC;
+    border-width: 5px;
+    border-color: black;
+    box-sizing: border-box;
+}
+
+.skillsgained{
+    width: 30%;
+    height: 100%;
+    background-color: #5b6777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #F8FAFC;
     border-style: solid;
     border-width: 5px;
     border-color: black;
